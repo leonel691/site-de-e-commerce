@@ -7,9 +7,10 @@
 body{
     font-size: 10px;
     display: grid;
+    /* overflow: hidden; */
 }
 .navbar{
-    margin-top:1rem;
+    margin:1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -81,4 +82,82 @@ body{
     border-radius: 0.6rem;
     padding:0.5rem 1rem;
     border:solid 0.1rem;
+}
+.hero{
+    /* display:flex; */
+    gap:1rem;
+    /* overflow-y:hidden ;
+    overflow-x: scroll; */
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    /* background-color: white; */
+    /* box-sizing: content-box; */
+}
+.section1{
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+}
+.sec1_text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    z-index: 3;
+}
+.sec1_text>h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.sec1_text>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(92, 84, 69);
+}
+.sec1_text>button{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: orange;
+    border-radius: 0.6rem;
+    padding:0.5rem 1rem;
+    border:solid 0.1rem;
+    cursor: pointer;
+}
+.sec1_img{
+    width: 50%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    flex:1;
+    /* background-image:url(./assets/images/promo.png); */
+}
+.sec1_img>img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 3;
+    position: relative;
+    top:20%;
+    left: 5%;
+}
+.tache{
+    width: 30rem;
+    height: 30rem;   
+    position: relative;
+    background: rgba(255, 166, 0, 0.753);
+    border-radius: 50%;
+    left: 0%;
+    bottom: 70%;
+    /* box-shadow: 0px 0px 300px 1px rgba(255, 166, 0, 0.5) ; */
+}
+.tache:hover{
+    animation: tache 1s infinite;
 }
